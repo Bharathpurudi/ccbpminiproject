@@ -1,0 +1,234 @@
+.specific-route-bg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161625;
+  min-height: 100vh;
+  width: 100vw;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+}
+.state-specific-container {
+  width: 80vw;
+  background-color: transparent;
+}
+.state-name-tested-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 80vw;
+}
+.state-name-specific-route {
+  background: rgba(2, 132, 199, 0.16);
+  border-radius: 32px;
+  text-align: center;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: #0ea5e9;
+  padding: 10.5412px 21.0824px;
+}
+.testedCasesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.tested-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #94a3b8;
+  margin-bottom: 0px;
+}
+.tested-cases-count {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 12px;
+  color: #94a3b8;
+}
+.total-cases-container {
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+}
+.top-districts-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ff073a;
+  margin-top: 25px;
+}
+.districts-insights-list {
+  display: flex;
+  flex-direction: row;
+  width: 1146px;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.district-insights-list-item {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+.district-count {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #94a3b8;
+  padding-right: 15px;
+}
+.district-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #94a3b8;
+}
+.state-insights-bar-chart-container {
+  width: 1146px;
+  background-color: transparent;
+}
+.line-charts-container {
+  width: 1146px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.spread-trends-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1146px;
+}
+.spread-trends-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #cbd5e1;
+}
+.trends-buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.cumulative-button {
+  height: 60px;
+  width: 140px;
+  text-align: center;
+  background-color: #1c1c2b;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #64748b;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+  .specific-route-bg-container {
+    width: 100vw;
+  }
+  .state-specific-container {
+    width: 80vw;
+  }
+  .state-name-tested-container {
+    width: 80vw;
+  }
+  .state-name-specific-route {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 10px;
+  }
+  .tested-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tested-cases-count {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .top-districts-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .districts-insights-list {
+    width: 80vw;
+  }
+  .district-insights-list-item {
+    width: 35vw;
+  }
+  .district-count {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .district-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .state-insights-bar-chart-container {
+    width: 80vw;
+  }
+  .line-charts-container {
+    width: 80vw;
+  }
+  .spread-trends-container {
+    width: 80vw;
+    align-self: center;
+  }
+  .spread-trends-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .cumulative-button {
+    height: 24px;
+    width: 80px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
