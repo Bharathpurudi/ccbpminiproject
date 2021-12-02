@@ -1,0 +1,10 @@
+.data-chart-bg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: transparent;
+  width: 80vw;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}

@@ -372,8 +372,9 @@ class StateSpecificRoute extends Component {
         >
           {sortDistData.map(each => (
             <li className="district-insights-list-item" key={each.name}>
-              <p className="district-count">{each[districtCasesInsight]}</p>
-              <p className="district-name">{each.name}</p>
+              <p className="district-count">
+                {each[districtCasesInsight]} {each.name}
+              </p>
             </li>
           ))}
         </ul>

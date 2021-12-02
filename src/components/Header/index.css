@@ -4,18 +4,23 @@
   left: 0px;
   top: 0px;
   background-color: #1e1e30;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 .header-items-list {
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
-  padding-left: 150px;
-  padding-right: 150px;
+  width: 250px;
 }
 .link-item {
   text-decoration: none;
+  outline: none;
 }
 .covid-text {
   font-family: Bree Serif;
@@ -48,54 +53,88 @@
   color: #f8fafc;
 }
 
-@media (max-width: 576px) {
-  .header-container {
-    width: 100vw;
-    height: 56px;
-    display: flex;
-    align-items: center;
-  }
-  .header-items-list {
-    width: 90vw;
-    padding-left: 5vw;
-    padding-left: 5vw;
-  }
-  .covid-text {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .india-text {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .nav-item {
-    font-size: 14px;
-    line-height: 18px;
+.mobile-nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #1e1e30;
+  height: 56px;
+  width: 100vw;
+}
+.mobile-header-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100vw;
+}
+.mobile-covid-text {
+  font-family: Bree Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f8fafc;
+}
+.mobile-india-text {
+  font-family: Bree Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: blue;
+}
+.mobile-button {
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+}
+.mobile-header-icon {
+  color: #ffffff;
+  height: 16px;
+  width: 24px;
+}
+.mobile-redirecting-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  height: 56px;
+  width: 100vw;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.mobile-home-about-container {
+  list-style-type: none;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-nav-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.355556px;
+  color: #ffffff;
+}
+
+@media (min-width: 577px) {
+  .mobile-nav-container {
+    display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .header-container {
-    width: 100vw;
-    height: 56px;
-    display: flex;
-    align-items: center;
-  }
-  .header-items-list {
-    width: 90vw;
-    padding-left: 5vw;
-    padding-left: 5vw;
-  }
-  .covid-text {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .india-text {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .nav-item {
-    font-size: 14px;
-    line-height: 18px;
+    display: none;
   }
 }

@@ -73,7 +73,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 80vw;
   background-color: transparent;
   margin-top: 0;
@@ -281,12 +281,13 @@
     width: 100vw;
   }
   .input-search-container {
-    width: 60vw;
+    width: 75vw;
     height: 48px;
   }
   .search-container {
     height: 35px;
-    width: 30px;
+    width: 20px;
+    margin-left: 5px;
   }
   .search-emoji {
     height: 20px;
@@ -294,13 +295,13 @@
   }
   .search-states-container {
     height: 35px;
-    width: 40vw;
-  }
-  .state-wise-search-list {
     width: 60vw;
   }
+  .state-wise-search-list {
+    width: 75vw;
+  }
   .state-insights-container {
-    width: 80vw;
+    width: 95vw;
     align-items: flex-start;
   }
 
@@ -308,125 +309,55 @@
     width: 80vw;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .total-cases-container {
-    width: 100px;
-    height: 100px;
-    margin-right: 15px;
-  }
-  .confirmed-card-text {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .confirmed-cases-count {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .active-card-text {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .active-cases-count {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .recovered-card-text {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .recovered-cases-count {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .deceased-card-text {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .deceased-cases-count {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .state-wise-insights-container {
-    width: 1000px;
-    overflow-x: scroll;
-    align-self: flex-start;
-  }
-  .state-wise-list-item {
-    width: 1000px;
-  }
-  .state-wise-insights-table-header {
-    width: 1000px;
-  }
-}
-
-@media (max-width: 768px) {
-  .home-bg-container {
-    width: 100vw;
-  }
-  .input-search-container {
-    width: 70vw;
-    height: 60px;
-  }
-  .search-container {
-    height: 45px;
-    width: 45px;
-  }
-  .search-emoji {
-    height: 20px;
-    width: 20px;
-  }
-  .search-states-container {
-    height: 45px;
-    width: 50vw;
-  }
-  .state-wise-search-list {
-    width: 70vw;
-  }
-  .state-insights-container {
-    width: 80vw;
-  }
-  .nation-wide-cases-container {
-    width: 80vw;
+    padding-left: 0;
+    justify-content: space-around;
+    align-self: center;
   }
   .total-cases-container {
     width: 120px;
     height: 120px;
+    margin-right: 0px;
+    margin-top: 15px;
   }
   .confirmed-card-text {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 16px;
   }
   .confirmed-cases-count {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
   .active-card-text {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 16px;
   }
   .active-cases-count {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
   .recovered-card-text {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 16px;
   }
   .recovered-cases-count {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
   .deceased-card-text {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 16px;
   }
   .deceased-cases-count {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
+  }
+  .state-wise-covid-data-table {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 90vw;
   }
   .state-wise-insights-container {
     width: 1000px;
-    overflow-x: scroll;
     align-self: flex-start;
   }
   .state-wise-list-item {

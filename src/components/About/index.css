@@ -64,9 +64,10 @@
   flex-direction: column;
   align-items: center;
   width: 500px;
+  margin-top: 100px;
 }
 .failure-image {
-  height: 300px;
+  height: 350px;
   width: 450px;
 }
 .failure-heading {
@@ -102,7 +103,10 @@
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
-  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 @media (max-width: 576px) {
@@ -110,7 +114,7 @@
     width: 100vw;
   }
   .about-faqs-container {
-    width: 80vw;
+    width: 85vw;
   }
   .about-heading {
     font-size: 24px;
@@ -125,10 +129,10 @@
     line-height: 24px;
   }
   .faqs-unordered-list {
-    width: 80vw;
+    width: 85vw;
   }
   .faq-list-item {
-    width: 80vw;
+    width: 85vw;
   }
   .faq-question {
     font-size: 14px;
@@ -142,8 +146,8 @@
     width: 60vw;
   }
   .failure-image {
-    height: 150px;
-    width: 40vw;
+    height: 130px;
+    width: 50vw;
   }
   .failure-heading {
     font-size: 16px;
@@ -153,53 +157,7 @@
     font-size: 12px;
     line-height: 20px;
   }
-}
-@media (max-width: 768px) {
-  .about-bg-container {
-    width: 100vw;
-  }
-  .about-faqs-container {
-    width: 85vw;
-  }
-  .about-heading {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .last-updated-text {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .vaccination-details {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .faqs-unordered-list {
-    width: 85vw;
-  }
-  .faq-list-item {
-    width: 85vw;
-  }
-  .faq-question {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .faq-answer {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .failure-container {
-    width: 70vw;
-  }
-  .failure-image {
-    height: 200px;
-    width: 50vw;
-  }
-  .failure-heading {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .failure-text {
-    font-size: 14px;
-    line-height: 20px;
+  .home-redirect-button {
+    padding: 5px;
   }
 }

@@ -47,9 +47,9 @@
 
 @media (max-width: 576px) {
   .filtered-state-list-item {
-    width: 60vw;
+    width: 75vw;
     height: 50px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 10px;
   }
   .state-name {
@@ -61,31 +61,7 @@
     line-height: 24px;
   }
   .redirect-container {
-    width: 60px;
-  }
-  .right-square-icon {
-    height: 15px;
-    width: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .filtered-state-list-item {
-    width: 70vw;
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 10px;
-  }
-  .state-name {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .state-code {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .redirect-container {
-    width: 65px;
+    width: 50px;
   }
   .right-square-icon {
     height: 15px;

@@ -63,13 +63,6 @@
   line-height: 12px;
   color: #94a3b8;
 }
-.total-cases-container {
-  width: 150px;
-  height: 150px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
 
 .card-button {
   display: flex;
@@ -129,7 +122,7 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .spread-trends-container {
   display: flex;
@@ -154,6 +147,9 @@
 .cumulative-button {
   height: 60px;
   width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background-color: #1c1c2b;
   border-style: none;
@@ -168,17 +164,24 @@
   color: #64748b;
   padding: 10px;
   margin-left: 10px;
+  border-radius: 5px;
 }
 
 @media (max-width: 576px) {
   .specific-route-bg-container {
     width: 100vw;
   }
+  .loader-container {
+    width: 100vw;
+    height: 150px;
+  }
   .state-specific-container {
     width: 80vw;
   }
   .state-name-tested-container {
     width: 80vw;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .state-name-specific-route {
     font-size: 16px;
@@ -187,48 +190,51 @@
   }
   .tested-text {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 14px;
   }
   .tested-cases-count {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 18px;
   }
   .top-districts-heading {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .districts-insights-list {
-    width: 80vw;
+    width: 90vw;
+    padding-left: 0;
   }
   .district-insights-list-item {
     width: 35vw;
+    margin-right: 10px;
   }
   .district-count {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
+    padding-right: 5px;
   }
   .district-name {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 14px;
   }
   .state-insights-bar-chart-container {
-    width: 80vw;
+    width: 90vw;
   }
   .line-charts-container {
-    width: 80vw;
+    width: 90vw;
   }
   .spread-trends-container {
-    width: 80vw;
+    width: 90vw;
     align-self: center;
   }
   .spread-trends-heading {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .cumulative-button {
-    height: 24px;
+    height: 35px;
     width: 80px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 20px;
   }
 }

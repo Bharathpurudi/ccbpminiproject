@@ -32,28 +32,15 @@
 
 @media (max-width: 576px) {
   .footer-container {
-    width: 80vw;
+    width: 85vw;
+    margin-bottom: 20px;
   }
   .footer-text {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .footer-icon {
     width: 31px;
     height: 34px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    width: 70vw;
-  }
-  .footer-text {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .footer-icon {
-    width: 40px;
-    height: 42px;
   }
 }

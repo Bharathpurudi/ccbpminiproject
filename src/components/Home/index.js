@@ -247,28 +247,6 @@ class Home extends Component {
     </div>
   )
 
-  sortDataInAsc = () => {
-    const {convertedData} = this.state
-    const ascendingSortedList = []
-      .concat(convertedData)
-      .sort((a, b) => (a < b ? 1 : -1))
-    this.setState(
-      {convertedData: ascendingSortedList},
-      this.finalRenderStatesInsights,
-    )
-  }
-
-  sortDataInDesc = () => {
-    const {convertedData} = this.state
-    const descendingSortedList = []
-      .concat(convertedData)
-      .sort((a, b) => (a > b ? 1 : -1))
-    this.setState(
-      {convertedData: descendingSortedList},
-      this.finalRenderStatesInsights,
-    )
-  }
-
   renderOnSuccess = () => {
     const {convertedData} = this.state
     const confirmedCasesCount = convertedData
@@ -283,6 +261,26 @@ class Home extends Component {
     const deceasedCasesCount = convertedData
       .map(each => parseInt(each.deceased))
       .reduce((prev, curr) => prev + curr, 0)
+
+    const sortDataInDesc = () => {
+      const descendingSortedList = []
+        .concat(convertedData)
+        .sort((a, b) => (a > b ? 1 : -1))
+      this.setState(
+        {convertedData: descendingSortedList},
+        this.finalRenderStatesInsights,
+      )
+    }
+
+    const sortDataInAsc = () => {
+      const ascendingSortedList = []
+        .concat(convertedData)
+        .sort((a, b) => (a > b ? 1 : -1))
+      this.setState(
+        {convertedData: ascendingSortedList},
+        this.finalRenderStatesInsights,
+      )
+    }
 
     return (
       <>
@@ -336,7 +334,10 @@ class Home extends Component {
             <p className="deceased-cases-count">{deceasedCasesCount}</p>
           </div>
         </div>
-        <div testid="stateWiseCovidDataTable">
+        <div
+          testid="stateWiseCovidDataTable"
+          className="state-wise-covid-data-table"
+        >
           <ul className="state-wise-insights-container">
             <header className="state-wise-insights-table-header" key="homelist">
               <div className="state-name-and-sort-list-container">
@@ -345,7 +346,7 @@ class Home extends Component {
                   className="asc-sort-button"
                   testid="ascendingSort"
                   type="button"
-                  onClick={this.sortDataInAsc}
+                  onClick={sortDataInAsc}
                 >
                   <FcGenericSortingAsc className="sort-icon" />
                 </button>
@@ -353,7 +354,7 @@ class Home extends Component {
                   className="asc-sort-button"
                   testid="descendingSort"
                   type="button"
-                  onClick={this.sortDataInDesc}
+                  onClick={sortDataInDesc}
                 >
                   <FcGenericSortingDesc className="sort-icon" />
                 </button>
