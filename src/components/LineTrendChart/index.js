@@ -27,7 +27,7 @@ const LineTrendChart = props => {
   return (
     <div className={chartBackgroundClass()}>
       <LineChart
-        width={1000}
+        width={1}
         height={300}
         data={lineChartDetails}
         margin={{

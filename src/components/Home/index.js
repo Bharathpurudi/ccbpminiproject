@@ -172,6 +172,7 @@ class Home extends Component {
     statesSearchList: [],
     dataFetchStatus: fetchConstants.initial,
     convertedData: [],
+    sortedArrays: [],
   }
 
   componentDidMount() {
@@ -188,6 +189,12 @@ class Home extends Component {
       const data = await response.json()
       const modifiedData = this.convertObjectDataToArray(data)
       this.setState({convertedData: modifiedData})
+      const ascArray = modifiedData
+      const dscArray = [].concat(modifiedData).sort().reverse()
+      this.setState(prevState => ({
+        sortedArrays: [...prevState.sortedArrays, ascArray, dscArray],
+      }))
+
       this.setState({dataFetchStatus: fetchConstants.success})
     } else {
       this.setState({dataFetchStatus: fetchConstants.failure})
@@ -248,7 +255,7 @@ class Home extends Component {
   )
 
   renderOnSuccess = () => {
-    const {convertedData} = this.state
+    const {convertedData, sortedArrays} = this.state
     const confirmedCasesCount = convertedData
       .map(each => parseInt(each.confirmed))
       .reduce((prev, curr) => prev + curr, 0)
@@ -263,23 +270,15 @@ class Home extends Component {
       .reduce((prev, curr) => prev + curr, 0)
 
     const sortDataInDesc = () => {
-      const descendingSortedList = []
-        .concat(convertedData)
-        .sort((a, b) => (a > b ? 1 : -1))
-      this.setState(
-        {convertedData: descendingSortedList},
-        this.finalRenderStatesInsights,
-      )
+      if (convertedData === sortedArrays[0]) {
+        this.setState({convertedData: sortedArrays[1]})
+      }
     }
 
     const sortDataInAsc = () => {
-      const ascendingSortedList = []
-        .concat(convertedData)
-        .sort((a, b) => (a > b ? 1 : -1))
-      this.setState(
-        {convertedData: ascendingSortedList},
-        this.finalRenderStatesInsights,
-      )
+      if (convertedData === sortedArrays[1]) {
+        this.setState({convertedData: sortedArrays[0]})
+      }
     }
 
     return (
